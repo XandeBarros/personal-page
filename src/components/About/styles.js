@@ -9,6 +9,8 @@ export const Container = styled.section`
   align-items: center;
   justify-content: space-around;
 
+  cursor:pointer;
+
   .active {
     box-shadow: ${({theme}) => theme.green} 0px 20px 30px -10px;
   }

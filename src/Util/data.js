@@ -22,4 +22,20 @@ export default {
       'fullstack': '75'
     },
   },
+  'portifolio': [{
+      'title': 'Challanges Front-End Mentor',
+      'description': 'Desafios de front-end do site frontendmentor.io, até o momento fiz uma calculadora, uma calculadora de gorgeta, um dashboard de controle de tempo e uma e-commerce page.',
+      'repo': 'https://github.com/XandeBarros/challenges-front-end-mentor',
+    },
+    {
+      'title': 'Weather App',
+      'description': 'Aplicativo de clima. Fetch de dados de uma API (WeatherApi) e uso do ThemeProvider para fazer o background responder ao clima do local ;)',
+      'repo': 'https://github.com/XandeBarros/weather-app',
+    },
+    {
+      'title': 'Landing Page',
+      'description': 'Landing Page para a XVII Sematron, grupo extracurricular da Universidade que organiza a Semana da Mecatrônica, e servia como porta de entrada para o sistema de cadastro.',
+      'repo': 'https://github.com/XandeBarros/landing-page-sematron',
+    }
+  ]
 };

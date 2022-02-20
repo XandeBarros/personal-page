@@ -11,7 +11,7 @@ export default function About() {
   const [content, setContent] = useState('intro');
 
   return(
-    <Container>
+    <Container id="sobre">
       <CardBox>
         <Card id="card-intro" className={content === 'intro' ? 'active' : null} onClick={() => {
           setContent('intro');

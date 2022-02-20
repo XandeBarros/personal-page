@@ -3,9 +3,11 @@ import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from './styles/global';
 import Header from './components/Header';
+import ThemeSelector from './components/ThemeSelector';
 import Home from './components/Home';
 import About from './components/About';
-import ThemeSelector from './components/ThemeSelector';
+import Portifolio from './components/Portifolio';
+import Contact from './components/Contact';
 
 import themes from './styles/themes';
 
@@ -36,6 +38,8 @@ function App() {
         <ThemeSelector onToggleTheme={handleToggleTheme} />
         <Home />
         <About />
+        <Portifolio />
+        <Contact />
       </DataContext.Provider>
     </ThemeProvider>
   );

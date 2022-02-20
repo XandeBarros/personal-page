@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Content = styled.div`
   position: fixed;
   top: 10rem;
-  right: 0;
+  right: 1rem;
 
   width: 4rem;
   height: 4rem;

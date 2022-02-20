@@ -49,7 +49,7 @@ export const Container = styled.header`
     font-weight: 700;
     color: ${({theme}) => theme.text};
 
-    &:hover {
+    &:hover, &:focus, &:active {
       color: ${({theme}) => theme.green};
     }
   }

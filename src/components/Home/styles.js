@@ -1,6 +1,18 @@
 import styled from 'styled-components';
 
-export const Container = styled.main`
+import bg from '../../assets/images/wallpaper/wallpaper-home.png';
+
+export const Background = styled.main`
+  width: 100%;
+  height: calc(100vh - 6rem);
+  margin: 0 auto;
+
+  background-image: url(${bg});
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
+
+export const Container = styled.div`
   width: 80%;
   height: calc(100vh - 6rem);
   margin: 0 auto;
