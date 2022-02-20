@@ -59,4 +59,29 @@ export const Container = styled.header`
     backdrop-filter: blur(9.8px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
+
+  @media(max-width: 425px) {
+    height: 10rem;
+    width: 100vw;
+
+    #content {
+      width: 90%;
+      flex-direction: column;
+      height: 10rem;
+    }
+
+    nav {
+      width: 90%;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      width: auto;
+      margin-bottom: .5rem;
+    }
+
+    nav a:last-child{
+      margin-bottom: 0;
+    }
+  }
 `;

@@ -3,9 +3,9 @@ import { InfoIntro, InfoInfo, InfoAbility } from './Infos';
 
 import { Container, CardBox, Card, Infos } from './styles';
 
-import introIcon from '../../assets/images/intro.svg';
-import infoIcon from '../../assets/images/info.svg';
-import classIcon from '../../assets/images/class.svg';
+import introIcon from '../../assets/images/icons/intro.svg';
+import infoIcon from '../../assets/images/icons/info.svg';
+import classIcon from '../../assets/images/icons/class.svg';
 
 export default function About() {
   const [content, setContent] = useState('intro');

@@ -10,6 +10,16 @@ export const Container = styled.section`
   gap: 1.5rem;
   align-items: center;
   justify-content: space-around;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+    
+    height: 100rem;
+  }
+
+  @media(max-width: 425px) {
+    width: 100%;
+  }
 `;
 
 export const CardPort = styled.div`
@@ -51,5 +61,9 @@ export const CardPort = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  @media(max-width: 425px) {
+    width: 90%;
   }
 `;

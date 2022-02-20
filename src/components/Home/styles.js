@@ -10,6 +10,18 @@ export const Background = styled.main`
   background-image: url(${bg});
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media(max-width: 768px) {
+    background-image: none;
+    
+    margin-top: 6rem;
+  }
+
+  @media(max-width: 425px) {
+    background-image: none;
+
+    margin-top: 10rem;
+  }
 `;
 
 export const Container = styled.div`
@@ -39,10 +51,40 @@ export const Container = styled.div`
   div svg:first-child {
     margin-bottom: 2rem;
   }
+
+  @media(max-width: 425px) {
+    div:first-child {
+      flex-direction: row;
+      
+      height: 4rem;
+    }
+
+    div svg {
+      margin-bottom: 0;
+    }
+
+    div svg:first-child {
+      margin-bottom: 0;
+    }
+
+    div:first-child {
+      justify-content: space-between;
+    }
+  }
+
+  @media(max-width: 768px) {
+    width: 90%;
+  }
+
+  @media(max-width: 425px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const Description = styled.div`
   margin: auto 0;
+  margin-right: 15rem;
 
   display: flex;
   flex-direction: column;
@@ -74,13 +116,23 @@ export const Description = styled.div`
     font-weight: 700;
     font-size: 1.25rem;
   }
+
+  @media(max-width: 768px) {
+    margin-right: 0;
+    height: 30rem;
+  }
+
+  @media(max-width: 425px) {
+    margin-right: 0;
+    height: 35rem;
+  }
 `;
 
 export const Parallax = styled.div`
-  height: 35rem;
-  width: 45rem;
+  height: 20rem;
+  width: 20rem;
 
-  padding: 10rem;
+  padding: 2rem;
 
   display: flex;
   flex-wrap: wrap;
@@ -89,6 +141,6 @@ export const Parallax = styled.div`
 
   img {
     position: relative;
-    width: 8rem;
+    width: 5rem;
   }
 `;

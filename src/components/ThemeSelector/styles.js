@@ -25,4 +25,9 @@ export const Content = styled.div`
     width: 2.5rem;
     align-self: center;
   }
+
+  @media(max-width: 425px) {
+    top: 90%;
+    right: 80%;
+  }
 `;

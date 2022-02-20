@@ -1,4 +1,9 @@
 export default {
+  'home': {
+    'hello': 'Olá! Eu sou',
+    'name': 'Alexandre Barros',
+    'description': 'Estudante de Engenharia Mecatrônica. Entusiasta do desenvolvimento web, no tempo livre da faculdade invisto meu tempo em estudar as stacks favoritas!'
+  },
   'cardInfos': {
     'intro': {
       'title': 'Introdução',
@@ -36,6 +41,7 @@ export default {
       'title': 'Landing Page',
       'description': 'Landing Page para a XVII Sematron, grupo extracurricular da Universidade que organiza a Semana da Mecatrônica, e servia como porta de entrada para o sistema de cadastro.',
       'repo': 'https://github.com/XandeBarros/landing-page-sematron',
-    }
-  ]
+    },
+  ],
+  'footer': 'Copyright © 2022 | Alexandre Barros',
 };

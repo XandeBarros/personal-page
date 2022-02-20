@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 
 import { Content } from './styles';
 
-import darkIcon from '../../assets/images/dark.svg';
-import lightIcon from '../../assets/images/light.svg';
+import darkIcon from '../../assets/images/icons/dark.svg';
+import lightIcon from '../../assets/images/icons/light.svg';
 
 import { DataContext } from '../../App';
 

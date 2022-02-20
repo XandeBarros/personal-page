@@ -25,6 +25,15 @@ export const InfosIntro = styled.div`
   p:last-child {
     margin-bottom: 0;
   }
+
+  @media(max-width: 768px) {
+    width: 30rem;
+  }
+
+  @media(max-width: 425px) {
+    width: 90%;
+    height: auto;
+  }
 `;
 
 export const InfosInfo = styled.div`
@@ -56,6 +65,15 @@ export const InfosInfo = styled.div`
   p span {
     color: ${({theme}) => theme.green};
   }
+
+  @media(max-width: 768px) {
+    width: 30rem;
+  }
+
+  @media(max-width: 425px) {
+    width: 90%;
+    height: auto;
+  }
 `;
 
 export const InfosAbility = styled.div`
@@ -67,6 +85,15 @@ export const InfosAbility = styled.div`
   border-radius: .5rem;
 
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+  @media(max-width: 768px) {
+    width: 30rem;
+  }
+
+  @media(max-width: 425px) {
+    width: 90%;
+    height: auto;
+  }
 
   h3 {
     margin-bottom: 2rem;

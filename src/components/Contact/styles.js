@@ -30,6 +30,19 @@ export const Container = styled.section`
     border-radius: .5rem;
   }
 
+  @media(max-width: 425px) {
+    width: 90%;
+    
+    height: 15rem;
+  }
+
+  @media(max-width: 425px) {
+    div {
+      width: 20rem;
+      height: auto;
+    }
+  }
+
   div > p {
     color: #000;
     font-weight: 500;

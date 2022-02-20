@@ -1,17 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
 import { Background, Container, Description, Parallax } from './styles';
 
-import cssLogo from '../../assets/images/css3.svg';
-import htmlLogo from '../../assets/images/html5.svg';
-import javascriptLogo from '../../assets/images/javascript.svg';
-import nodejsLogo from '../../assets/images/nodejs.svg';
-import reactLogo from '../../assets/images/react.svg';
+import cssLogo from '../../assets/images/stack/css3.svg';
+import htmlLogo from '../../assets/images/stack/html5.svg';
+import javascriptLogo from '../../assets/images/stack/javascript.svg';
+import nodejsLogo from '../../assets/images/stack/nodejs.svg';
+import reactLogo from '../../assets/images/stack/react.svg';
+
+import { DataContext } from '../../App';
 
 import TypeWriter from '../../Util/TypeWriter';
 const writer = new TypeWriter();
 
 export default function Home() {
+  const context = useContext(DataContext);
   const [txt, setTxt] = useState(writer.getText());
   
   setTimeout(() => setTxt(writer.getText()), writer.getSpeed());
@@ -64,9 +67,9 @@ export default function Home() {
 
         <Description>
           <h1>
-            Olá! Eu sou <br />
+            {context.home.hello} <br />
             <span>
-              Alexandre Barros
+              {context.home.name}
             </span>
           </h1>
           <h2>
@@ -75,9 +78,7 @@ export default function Home() {
             </span>
           </h2>
           <p>
-            Estudante de Engenharia Mecatrônica. 
-            Entusiasta do desenvolvimento web, 
-            no tempo livre da faculdade invisto meu tempo em estudar as stacks favoritas!
+            {context.home.description}
           </p>
         </Description>
 

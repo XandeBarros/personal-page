@@ -14,6 +14,12 @@ export const Container = styled.section`
   .active {
     box-shadow: ${({theme}) => theme.green} 0px 20px 30px -10px;
   }
+
+  @media(max-width: 768px) {
+    width: 90%;
+    height: 60rem;
+    flex-direction: column;
+  }
 `;
 
 export const CardBox = styled.div`
@@ -24,6 +30,14 @@ export const CardBox = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
+  @media(max-width: 768px) {
+    width: 30rem;
+  }
+
+  @media(max-width: 425px) {
+    width: 90%;
+  }
 `;
 
 export const Card = styled.div`
@@ -46,5 +60,9 @@ export const Card = styled.div`
 
   div p {
     font-weight: 500;
+  }
+
+  @media(max-width: 425px) {
+    width: 100%;
   }
 `;
